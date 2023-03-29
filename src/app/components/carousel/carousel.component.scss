@@ -1,0 +1,34 @@
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+.carousel {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 800px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 800px;
+  }
+  
+  .carousel-item {
+    color: chocolate;
+    min-width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-weight: 900;
+    &.light {
+        background-color: bisque;
+    }
+    &.dark {
+        background-color: burlywood;
+    }
+  }
